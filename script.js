@@ -34,6 +34,7 @@ document.getElementById('pasteButton').addEventListener('click', async () => {
       })
     };
 
+      qrDiv.innerHTML =""
       const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(pasteUrl)}`;
       const imgElement = document.createElement('img');
       imgElement.src = qrCodeUrl;
